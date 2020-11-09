@@ -71,6 +71,9 @@ COPY demo_setup.sh .
 COPY launch_demo_script.sh .
 COPY launch_demo.sh .
 
+RUN apt-get -y update && apt-get -y install libgl1-mesa-glx libgl1-mesa-dri
+RUN rm -rf /var/lib/apt/lists/*
+
 # Normal init
 EXPOSE 8080
 CMD ["bash"]
