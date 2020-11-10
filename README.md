@@ -17,7 +17,7 @@ This Docker image provides a fully integrated ROS Melodic, Gazebo, PixHawk simul
 1. Follow steps 1-3 above
 2. Download https://github.com/dobots/drones (private, contact us if you need access)
 3. Go into the drones project folder
-4. Start */<fullPath2DockerPathFinder>/run_rosgazebo.sh*
+4. Start */`<fullPath2DockerPathFinder>`/run_rosgazebo.sh*
 5. At the bash prompt within the container, start: *./demo_setup.sh* (this will pop-up gazebo and RViz)
 6. From a second terminal prompt, run: *docker exec -it gazebo_test bash*
 7. At the (new) bash prompt within the container, start: *launch_demo_script.sh*
